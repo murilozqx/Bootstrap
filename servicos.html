@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Serviços | Casa Patas</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+	<style>
+		:root { --ink: #24352f; --muted: #66756f; --cream: #fff9ef; --mint: #dcefe5; --coral: #ee765e; --yellow: #f7cf67; }
+		body { background: var(--cream); color: var(--ink); font-family: 'DM Sans', sans-serif; }
+		h1, h2, h3, .brand { font-family: 'Fraunces', serif; }
+		.navbar { background: rgba(255, 249, 239, .94); }
+		.brand { color: var(--ink); font-size: 1.35rem; }
+		.brand-mark { color: var(--coral); }
+		.nav-link { color: var(--muted); font-weight: 500; }
+		.nav-link:hover, .nav-link.active { color: var(--coral); }
+		.hero { background: var(--mint); border-radius: 1.25rem; }
+		.eyebrow, .section-label { color: var(--coral); font-size: .78rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+		.service-card { background: #fff; border: 0; border-radius: 1rem; transition: transform .2s ease, box-shadow .2s ease; }
+		.service-card:hover { transform: translateY(-4px); box-shadow: 0 .75rem 1.5rem rgba(36, 53, 47, .1) !important; }
+		.icon-circle { align-items: center; background: var(--yellow); border-radius: 50%; display: flex; font-size: 1.35rem; height: 3rem; justify-content: center; width: 3rem; }
+		.btn-coral { background: var(--coral); border-color: var(--coral); color: #fff; }
+		.btn-coral:hover { background: #d95e49; border-color: #d95e49; color: #fff; }
+		.text-muted-custom, footer { color: var(--muted); }
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md border-bottom sticky-top">
+		<div class="container py-2">
+			<a class="brand text-decoration-none" href="index.html"><span class="brand-mark">♥</span> Casa Patas</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto gap-md-3">
+				<li class="nav-item"><a class="nav-link active" href="servicos.html" aria-current="page">Serviços</a></li>
+				<li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+				<li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+			</ul></div>
+		</div>
+	</nav>
+	<main class="container py-4 py-lg-5">
+		<section class="hero p-4 p-md-5 mb-5">
+			<p class="eyebrow mb-3">Cuidado com calma e carinho</p>
+			<h1 class="display-4 mb-3">Serviços para uma rotina mais leve.</h1>
+			<p class="lead text-muted-custom mb-0 col-lg-8">Do banho relaxante ao cuidado regular, nossa equipe prepara cada detalhe pensando no bem-estar do seu pet.</p>
+		</section>
+		<div class="row g-4 mb-5">
+			<div class="col-12 col-md-6"><article class="service-card shadow-sm h-100 p-4"><div class="icon-circle mb-3">✂</div><h2 class="h3">Banho & tosa</h2><p class="text-muted-custom">Higiene, hidratação e tosa sob medida para cada tipo de pelo, sempre respeitando o tempo e o temperamento do seu pet.</p><a class="btn btn-coral rounded-pill px-4" href="contato.html">Agendar cuidado</a></article></div>
+			<div class="col-12 col-md-6"><article class="service-card shadow-sm h-100 p-4"><div class="icon-circle mb-3">✦</div><h2 class="h3">Clube de vantagens</h2><p class="text-muted-custom">Planos simples para manter os cuidados em dia, com descontos em serviços e surpresas para os clientes mais fiéis.</p><a class="btn btn-outline-dark rounded-pill px-4" href="contato.html">Quero participar</a></article></div>
+			<div class="col-12 col-md-6"><article class="service-card shadow-sm h-100 p-4"><div class="icon-circle mb-3">♥</div><h2 class="h3">Cuidado personalizado</h2><p class="text-muted-custom">Conversamos sobre a rotina, a idade e as necessidades do seu pet para indicar os melhores produtos e cuidados.</p></article></div>
+			<div class="col-12 col-md-6"><article class="service-card shadow-sm h-100 p-4"><div class="icon-circle mb-3">⌂</div><h2 class="h3">Retirada e entrega</h2><p class="text-muted-custom">Mais praticidade para dias corridos: consulte nossa equipe sobre a disponibilidade do serviço na sua região.</p></article></div>
+		</div>
+		<section class="p-4 p-md-5 rounded-4" style="background:#f5e6c7"><p class="section-label mb-2">Pronto para começar?</p><h2 class="h3 mb-3">Vamos encontrar o cuidado ideal.</h2><p class="text-muted-custom mb-4">Nossa equipe responde rapidinho e ajuda você a escolher o melhor horário.</p><a class="btn btn-coral rounded-pill px-4" href="contato.html">Falar com a equipe</a></section>
+	</main>
+	<footer class="container border-top py-4 d-flex justify-content-between flex-wrap gap-2"><span>Casa Patas · Petshop com afeto</span><span>Rua das Flores, 120 · São Paulo</span></footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
